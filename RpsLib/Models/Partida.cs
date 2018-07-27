@@ -12,5 +12,15 @@ namespace RpsLib.Models
         {
             Jogadores = new List<Jogador>();
         }
+
+        public void AdicionarJogador(Jogador jogador)
+        {
+            Jogadores.Add(jogador);
+        }
+
+        public List<Jogador> CarregarJogadoresIncluidos()
+        {
+            return Jogadores;
+        }
     }
 }

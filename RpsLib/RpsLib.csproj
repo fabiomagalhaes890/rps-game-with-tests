@@ -39,7 +39,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessRule\Jogo.cs" />
+    <Compile Include="Exceptions\ElementWasNotSelectedError.cs" />
     <Compile Include="Exceptions\NoSuchStrategyError.cs" />
+    <Compile Include="Exceptions\NotInformedNameError.cs" />
     <Compile Include="Exceptions\WrongNumberOfPlayersError.cs" />
     <Compile Include="Models\ElementoJogada.cs" />
     <Compile Include="Models\Jogador.cs" />

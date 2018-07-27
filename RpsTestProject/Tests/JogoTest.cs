@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RpsLib.BusinessRule;
+using RpsLib.Exceptions;
 using RpsLib.Models;
 using System;
 
@@ -108,28 +109,28 @@ namespace RpsTestProject.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Nome do primeiro jogador não informado.")]
-        public void DadaUmaJogadaOndePrimeiroJogadorNaoTiverNomeInformadoDeveraRetornarMensagemErroNomePrimeiroJogadorNaoInformado()
+        [ExpectedException(typeof(NotInformedNameError), "Not informed name error.")]
+        public void DadaUmaJogadaOndePrimeiroJogadorNaoTiverNomeInformadoDeveraRetornarMensagemErroNotInformedNameError()
         {
-            var jogador1 = new Jogador("", ElementoJogada.SCISSOR);
+            var jogador1 = new Jogador(string.Empty, ElementoJogada.SCISSOR);
             var jogador2 = new Jogador("Jamilton", ElementoJogada.ROCK);
 
             new Jogo().RealizarDisputaEmDupla(jogador1, jogador2);
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Nome do segundo jogador não informado.")]
-        public void DadaUmaJogadaOndeSegundoJogadorNaoTiverNomeInformadoDeveraRetornarMensagemErroNomeSegundoJogadorNaoInformado()
+        [ExpectedException(typeof(NotInformedNameError), "Not informed name error.")]
+        public void DadaUmaJogadaOndeSegundoJogadorNaoTiverNomeInformadoDeveraRetornarMensagemErroNotInformedNameError()
         {
             var jogador1 = new Jogador("Joao", ElementoJogada.SCISSOR);
-            var jogador2 = new Jogador("", ElementoJogada.ROCK);
+            var jogador2 = new Jogador(string.Empty, ElementoJogada.ROCK);
 
             new Jogo().RealizarDisputaEmDupla(jogador1, jogador2);
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Primeiro jogador não selecionou um elemento.")]
-        public void DadaUmaJogadaOndePrimeiroJogadorNaoTiverElementoInformadoDeveraRetornarMensagemErroPrimeiroJogadorNaoInformouElemento()
+        [ExpectedException(typeof(ElementWasNotSelectedError), "Element was not selected error.")]
+        public void DadaUmaJogadaOndePrimeiroJogadorNaoTiverElementoInformadoDeveraRetornarMensagemErroElementWasNotSelectedError()
         {
             var jogador1 = new Jogador("Joao", 0);
             var jogador2 = new Jogador("Jamilton", ElementoJogada.ROCK);
@@ -138,8 +139,8 @@ namespace RpsTestProject.Tests
         }
 
         [TestMethod]
-        [ExpectedException(typeof(Exception), "Segundo jogador não selecionou um elemento.")]
-        public void DadaUmaJogadaOndeSegundoJogadorNaoTiverElementoInformadoDeveraRetornarMensagemErroSegundoJogadorNaoInformouElemento()
+        [ExpectedException(typeof(ElementWasNotSelectedError), "Element was not selected error.")]
+        public void DadaUmaJogadaOndeSegundoJogadorNaoTiverElementoInformadoDeveraRetornarMensagemErroElementWasNotSelectedError()
         {
             var jogador1 = new Jogador("Joao", ElementoJogada.SCISSOR);
             var jogador2 = new Jogador("Jamilton", 0);
