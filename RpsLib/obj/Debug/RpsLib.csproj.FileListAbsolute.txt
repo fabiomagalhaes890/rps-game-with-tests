@@ -1,0 +1,10 @@
+C:\projetos\jogoPPT\RpsGame\RpsLib\obj\Debug\RpsLib.csprojResolveAssemblyReference.cache
+C:\projetos\jogoPPT\RpsGame\RpsLib\bin\Debug\RpsLib.dll
+C:\projetos\jogoPPT\RpsGame\RpsLib\bin\Debug\RpsLib.pdb
+C:\projetos\jogoPPT\RpsGame\RpsLib\obj\Debug\RpsLib.dll
+C:\projetos\jogoPPT\RpsGame\RpsLib\obj\Debug\RpsLib.pdb
+C:\projetos\jogoPPT\RpsLib\bin\Debug\RpsLib.dll
+C:\projetos\jogoPPT\RpsLib\bin\Debug\RpsLib.pdb
+C:\projetos\jogoPPT\RpsLib\obj\Debug\RpsLib.csprojResolveAssemblyReference.cache
+C:\projetos\jogoPPT\RpsLib\obj\Debug\RpsLib.dll
+C:\projetos\jogoPPT\RpsLib\obj\Debug\RpsLib.pdb

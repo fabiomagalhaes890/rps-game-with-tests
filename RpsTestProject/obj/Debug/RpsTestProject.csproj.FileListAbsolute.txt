@@ -1,0 +1,16 @@
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\bin\Debug\RpsTestProject.dll
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\bin\Debug\RpsTestProject.pdb
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\bin\Debug\RpsLib.dll
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\bin\Debug\RpsLib.pdb
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\obj\Debug\RpsTestProject.csprojResolveAssemblyReference.cache
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\obj\Debug\RpsTestProject.dll
+C:\projetos\jogoPPT\RpsGame\RpsTestProject\obj\Debug\RpsTestProject.pdb
+C:\projetos\jogoPPT\RpsTestProject\bin\Debug\RpsTestProject.dll
+C:\projetos\jogoPPT\RpsTestProject\bin\Debug\RpsTestProject.pdb
+C:\projetos\jogoPPT\RpsTestProject\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\projetos\jogoPPT\RpsTestProject\bin\Debug\RpsLib.dll
+C:\projetos\jogoPPT\RpsTestProject\bin\Debug\RpsLib.pdb
+C:\projetos\jogoPPT\RpsTestProject\obj\Debug\RpsTestProject.csprojResolveAssemblyReference.cache
+C:\projetos\jogoPPT\RpsTestProject\obj\Debug\RpsTestProject.dll
+C:\projetos\jogoPPT\RpsTestProject\obj\Debug\RpsTestProject.pdb
