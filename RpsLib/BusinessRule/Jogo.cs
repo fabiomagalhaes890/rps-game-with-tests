@@ -9,24 +9,23 @@ namespace RpsLib.BusinessRule
         public Torneio RealizarDisputasTorneio(List<Partida> partidas)
         {
             var torneio = new Torneio();
-
-            torneio.Vencedor = Recursao(partidas, partidas.Count, null);
+            torneio.Vencedor = DisputarJogosDasChaves(partidas, partidas.Count, null);
 
             return torneio;
         }
 
-        private Jogador Recursao(List<Partida> partidas, int total, Jogador vencedor)
+        private Jogador DisputarJogosDasChaves(List<Partida> partidas, int total, Jogador jogador)
         {
             if (total == 0)
-                return vencedor;
+                return jogador;
 
-            var p1 = partidas[0];
-            var v1 = RealizarDisputaPartida(p1).Vencedor;
+            var partida = partidas[0];
+            var vencedorChave = RealizarDisputaPartida(partida).Vencedor;
 
-            partidas.Remove(p1);
+            partidas.Remove(partida);
 
-            var ganhou = Recursao(partidas, partidas.Count, v1);
-            return IdentificarMaiorElemento(vencedor, ganhou);
+            vencedorChave = DisputarJogosDasChaves(partidas, partidas.Count, vencedorChave);
+            return IdentificarMaiorElemento(jogador, vencedorChave);
         }
 
         public Partida RealizarDisputaPartida(Partida partida)
